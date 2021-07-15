@@ -1,0 +1,89 @@
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 15% 0 15%;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+/* .hero-container:after {
+  content: '';
+  display: table;
+  clear: both;
+} */
+
+.column > h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.column > p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.column > button {
+  padding: 10px;
+  border: 1px solid rgb(230, 219, 219);
+  box-shadow: 0 0 1rem 0 rgba(223, 207, 207, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+  margin-top: 15px;
+  background: rgb(23, 23, 231);
+  font-weight: bold;
+}
+.column > button:hover {
+  background: rgb(119, 119, 226);
+}
+
+.column > img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .hero-container {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-container {
+    margin-top: 15%;
+  }
+  .column > h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-container {
+    background: url('./assets/images/bitcoin1.svg');
+
+    background-attachment: fixed;
+    background-size: 50% 80%;
+    margin: 15% 0 0 5%;
+  }
+  .column {
+    color: rgb(87, 82, 23);
+  }
+  .column > p {
+    font-weight: bold;
+  }
+
+  .column > button {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .column > img {
+    display: none;
+  }
+}

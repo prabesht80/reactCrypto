@@ -4,11 +4,13 @@
   align-items: center;
   width: 100%;
   height: 10vh;
+  border: 1px solid whitesmoke;
+  position: sticky;
 }
 
 .navbarLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navbarLinks > h2 {

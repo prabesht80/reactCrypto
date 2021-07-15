@@ -1,0 +1,9 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgb(228, 238, 218);
+  margin: 5% 15% 5% 15%;
+  border-radius: 20px;
+}
