@@ -5,6 +5,7 @@ import Bitcoin from './assets/images/bitcoin.svg';
 function Hero() {
   return (
     <div className="hero-container">
+      {/* hero text */}
       <div className="column">
         <h2>Buy & sell crypto in minutes</h2>
         <p>
@@ -13,6 +14,7 @@ function Hero() {
         </p>
         <button>Get Started Now</button>
       </div>
+      {/* hero image */}
       <div className="column">
         <img src={Bitcoin} alt="#" />
       </div>

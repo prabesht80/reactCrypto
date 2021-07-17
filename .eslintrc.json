@@ -14,7 +14,7 @@
   "plugins": ["react"],
   "parser": "babel-eslint",
   "rules": {
-    "semi": ["error", "always"],
+    "react/prop-types": "off",
     "comma-dangle": ["error", "never"]
   }
 }

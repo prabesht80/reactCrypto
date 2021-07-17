@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 550px) {
   .hero-container {
-    background: url('./assets/images/bitcoin1.svg');
+    background: rgb(214, 214, 8);
 
     background-attachment: fixed;
     background-size: 50% 80%;
