@@ -1,21 +1,22 @@
 .card-container {
   padding: 20px;
   margin: 30px;
+  cursor: pointer;
 }
 .card-container:hover {
   background: rgb(255, 255, 255);
   border-radius: 20px;
 }
 
-.firstSpan {
-  font-size: 1.5rem;
-  font-weight: 600;
+.firstSpan > img {
+  width: 100%;
+  max-width: 50px;
 }
+
 .card-container > h4 {
   margin-top: 5px;
 }
 .secondSpan {
-  background: rgb(120, 232, 8);
   font-weight: 700;
   padding: 3px;
   border-radius: 12px;

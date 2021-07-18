@@ -1,18 +1,26 @@
 import React from 'react';
 import './Card.css';
-import { FaBitcoin } from 'react-icons/fa';
 
-function Card() {
+function Card({ coin }) {
   return (
-    <div className="card-container">
+    <div className="card-container" key={coin.ath}>
       <span className="firstSpan">
-        <FaBitcoin />
+        <img src={coin.image} alt={coin.name} />
       </span>
       <h4>
-        BTC/coin <span className="secondSpan"> +2.3%</span>
+        {coin.name}/{coin.symbol}
+        {coin.price_change_percentage_24h < 0 ? (
+          <span className="secondSpan" style={{ background: 'red' }}>
+            {coin.price_change_percentage_24h.toFixed(2)}%
+          </span>
+        ) : (
+          <span className="secondSpan" style={{ background: 'green' }}>
+            {coin.price_change_percentage_24h.toFixed(2)}%
+          </span>
+        )}
       </h4>
-      <p className="firstP">$32,452</p>
-      <p>34567834</p>
+      <p className="firstP">${coin.current_price}</p>
+      <p>{coin.market_cap}</p>
     </div>
   );
 }

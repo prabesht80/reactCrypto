@@ -1,14 +1,12 @@
 import React from 'react';
 import './AllCards.css';
 import Card from './Card';
-
-function AllCards() {
+function AllCards({ slicedCoin }) {
   return (
     <div className="cards-container">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {slicedCoin.map((coin) => (
+        <Card coin={coin} key={coin.ath} />
+      ))}
     </div>
   );
 }

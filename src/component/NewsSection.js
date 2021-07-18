@@ -3,6 +3,7 @@ import './NewsSection.css';
 import image from './assets/images/bitcoin1.svg';
 import requests from './api/NewsRequest';
 import axios from './api/newsAxios';
+import { Link } from 'react-router-dom';
 // import NewsCard from './NewsCard';
 
 function NewsSection() {
@@ -29,7 +30,9 @@ function NewsSection() {
       {/* News Header  */}
       <div className="newsSection-header">
         <h2>Crypto News </h2>
-        <button>View More</button>
+        <Link to="/allCrypto">
+          <button className="moreNews">View More</button>
+        </Link>
       </div>
 
       {/* News Links */}

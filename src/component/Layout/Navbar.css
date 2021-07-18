@@ -13,11 +13,12 @@
   justify-content: space-around;
 }
 
-.navbarLinks > h2 {
+.navLogo {
   font-size: 2rem;
   padding: 10px;
   margin: 10px;
 }
+
 .navbarLinks > span {
   margin: 20px 10px 0 10px;
   width: 1px;

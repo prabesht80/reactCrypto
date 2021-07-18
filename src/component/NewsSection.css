@@ -17,7 +17,7 @@
   font-size: 2rem;
   font-weight: 900;
 }
-.newsSection-header > button {
+.moreNews {
   padding: 5px;
   border-radius: 15px;
   font-size: 1rem;
@@ -25,12 +25,12 @@
   cursor: pointer;
 }
 
-/* 
-LInks design */
-.newsSection-header > button:hover {
+.moreNews:hover {
   background: rgb(27, 27, 90);
   color: white;
 }
+/* 
+LInks design */
 
 .newsSection-links > ul {
   display: flex;

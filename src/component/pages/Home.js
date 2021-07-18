@@ -3,11 +3,11 @@ import AllCards from '../AllCards';
 import Hero from '../Hero';
 import NewsSection from '../NewsSection';
 
-function Home() {
+function Home({ slicedCoin }) {
   return (
     <>
       <Hero />
-      <AllCards />
+      <AllCards slicedCoin={slicedCoin} />
       <NewsSection />
     </>
   );
