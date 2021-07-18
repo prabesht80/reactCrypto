@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './NewsSection.css';
+import './styles/NewsSection.css';
 import image from './assets/images/bitcoin1.svg';
 import requests from './api/NewsRequest';
 import axios from './api/newsAxios';

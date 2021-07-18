@@ -1,6 +1,7 @@
 import React from 'react';
-import './AllCards.css';
+import './styles/AllCards.css';
 import Card from './Card';
+
 function AllCards({ slicedCoin }) {
   return (
     <div className="cards-container">

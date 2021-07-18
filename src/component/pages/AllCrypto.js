@@ -1,5 +1,5 @@
 import React from 'react';
-import './AllCrypto.css';
+import '../styles/AllCrypto.css';
 
 function AllCrypto({ coinData }) {
   return (
