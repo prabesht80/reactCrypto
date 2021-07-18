@@ -3,7 +3,7 @@ import Home from './component/pages/Home';
 import { Switch, Route } from 'react-router-dom';
 import Layout from './component/Layout/Layout';
 import AllCrypto from './component/pages/AllCrypto';
-import axios from 'axios';
+import { Cryptos } from './component/api/cryptos';
 
 function App() {
   const [coinData, setCoinData] = useState([]);
@@ -11,15 +11,9 @@ function App() {
   const slicedCoin = coinData.slice(0, 4);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await axios.get(
-        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false'
-      );
-      const data = await res.data;
-      setCoinData(data);
-    };
-    fetchData();
+    Cryptos().then(setCoinData);
   });
+
   return (
     <div className="App">
       <Layout>
