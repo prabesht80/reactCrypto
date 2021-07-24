@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './styles/NewsSection.css';
 import image from './assets/images/bitcoin1.svg';
-import requests from './api/NewsRequest';
+import requests from '../component/api/newsRequest';
 import axios from './api/newsAxios';
 import { Link } from 'react-router-dom';
 // import NewsCard from './NewsCard';
@@ -10,7 +10,7 @@ function NewsSection() {
   // initial request
   const [selectedOption, setSelectedOption] = useState(requests.all);
 
-  const [newData, setNewData] = useState([]);
+  const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -20,17 +20,19 @@ function NewsSection() {
     const res = await axios.get(selectedOption);
     const data = await res.data;
     // set articles data to newData
-    setNewData(data.articles);
+    setNewsData(data.articles);
   };
 
-  console.log(newData);
+  console.log(newsData);
+  const titles = newsData.map((news) => news.titles);
+  console.log(titles);
 
   return (
     <div className="newsSection-container">
       {/* News Header  */}
       <div className="newsSection-header">
         <h2>Crypto News </h2>
-        <Link to="/allCrypto">
+        <Link to="/news">
           <button className="moreNews">View More</button>
         </Link>
       </div>
@@ -67,30 +69,31 @@ function NewsSection() {
         <div className="one">
           <img className="photo1" src={image} alt="#" />
           <div className="word1">
-            <h3>
-              Leverage token now available
-              <button> Learn more </button>
+            <h3 id="newsTitle">
+              {titles[0]}
+              {/* <button> Learn more </button> */}
             </h3>
             <p>Good thing come in 3s levereged token now</p>
           </div>
         </div>
+        ;
         <div className="two">
           <div className="word2">
-            <h3> Leverage token now available</h3>
+            <h3 className="newsTitle"> Leverage token now available</h3>
             <p>Good thing come in 3s levereged token now.</p>
           </div>
           <img className="photo2" src={image} alt="#" />
         </div>
         <div className="three">
           <div className="word2">
-            <h3>Leverage token now available</h3>
+            <h3 className="newsTitle">Leverage token now available</h3>
             <p>Good thing come in 3s levereged token now.</p>
           </div>
           <img className="photo2" src={image} alt="#" />
         </div>
         <div className="four">
           <div className="word2">
-            <h3>Leverage token now available</h3>
+            <h3 className="newsTitle">Leverage token now available</h3>
             <p>Good thing come in 3s levereged token now.</p>
           </div>
           <img className="photo2" src={image} alt="#" />

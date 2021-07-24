@@ -1,9 +1,21 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addToCart } from './redux/actions/coinActions';
 import './styles/Card.css';
 
 function Card({ coin }) {
+  //redux dispatch function
+  const dispatch = useDispatch();
+
   return (
-    <div className="card-container" key={coin.ath}>
+    // Home section cards
+
+    //dispatch function call
+    <div
+      className="card-container"
+      key={coin.ath}
+      onClick={() => dispatch(addToCart())}
+    >
       <span className="firstSpan">
         <img src={coin.image} alt={coin.name} />
       </span>

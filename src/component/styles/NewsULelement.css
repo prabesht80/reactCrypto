@@ -1,0 +1,18 @@
+.newsSection-links > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsSection-links > ul li {
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.newsSection-links > ul li:hover {
+  background: black;
+  color: white;
+  border-radius: 10px;
+}

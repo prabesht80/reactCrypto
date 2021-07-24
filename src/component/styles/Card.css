@@ -1,3 +1,15 @@
+.cart {
+  position: fixed;
+  top: 50%;
+  padding: 10px 12px 10px 10px;
+  font-size: 2rem;
+  background: rgb(221, 215, 215);
+  border-radius: 10px;
+}
+.cart:hover {
+  font-size: 2.2rem;
+}
+
 .card-container {
   padding: 20px;
   margin: 30px;

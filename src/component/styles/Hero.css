@@ -5,6 +5,32 @@
   margin: 5% 15% 0 15%;
 }
 
+/* cart */
+.cart {
+  position: fixed;
+  top: 50%;
+  padding: 10px 12px 10px 10px;
+  font-size: 2rem;
+  background: rgb(221, 215, 215);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart:hover {
+  font-size: 2.2rem;
+}
+
+.cart > h3 {
+  position: relative;
+  top: -5px;
+  font-size: 1.2rem;
+  background-color: rgb(62, 71, 136);
+  margin: 2px;
+  padding: 5px;
+  border-radius: 40%;
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;

@@ -1,0 +1,40 @@
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box > img {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid rgb(160, 153, 153);
+  border-radius: 10px;
+}
+
+.text > h3 {
+  font-size: 1.8rem;
+  color: rgb(58, 53, 53);
+}
+.text {
+  text-align: center;
+}
+
+.text > h3:hover {
+  opacity: 0;
+}
+
+.text > p {
+  font-weight: 500;
+  opacity: 0;
+}
+
+@media screen and(max-width:850px) {
+  .text {
+    top: 30%;
+    left: 20%;
+  }
+}

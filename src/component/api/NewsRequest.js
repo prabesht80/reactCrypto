@@ -4,5 +4,5 @@ const API_KEY = '41fa0658264b4a6491a1ef2a166ed53c';
 export default {
   all: `/everything?q=technology&apiKey=${API_KEY}`,
   bitcoin: `/everything?q=bitcoin&apiKey=${API_KEY}`,
-  blockchain: `/everything?q=blockchainn&apiKey=${API_KEY}`
+  blockchain: `/everything?q=america&apiKey=${API_KEY}`
 };
